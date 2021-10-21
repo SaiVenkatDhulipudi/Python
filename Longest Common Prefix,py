@@ -1,0 +1,17 @@
+"""
+QUESTION LINK:
+https://www.geeksforgeeks.org/longest-common-prefix-using-character-by-character-matching/
+"""
+n=int(input())
+l=list(map(str,input().split()))
+def prefix():
+  s=''
+  sub=min(l)
+  for i in range(len(sub)):
+    for j in range(0,n):
+      if sub[i] not in l[j][i]:
+        return s
+    else:
+      s+=sub[i]
+  return s
+print(prefix())
