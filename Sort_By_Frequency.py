@@ -4,6 +4,5 @@ input:
 output:
 3 2 2 1 1 1
 """
-l=list(map(int,input().split()))
-l1=sorted(l,key=l.count)
-print(*l1,sep=' ')
+lis = list(map(int, input().split()))
+print(sorted(lis, key=lis.count), sep=" ")

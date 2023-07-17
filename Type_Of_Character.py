@@ -12,10 +12,10 @@ a1
 output:
 alpha numeric
 """
-s=str(input())
+s = str(input())
 if s.isalpha():
-  print("alphabet")
+    print("alphabet")
 elif s.isnumeric():
-  print("number")
+    print("number")
 elif s.isalnum():
-  print("alpha numeric")
+    print("alpha numeric")

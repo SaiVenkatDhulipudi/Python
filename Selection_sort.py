@@ -1,10 +1,10 @@
-n=int(input())
-l=list(map(int,input().strip().split()))
-inf=10000000000
-temp=[]
+n = int(input())
+lis = list(map(int, input().strip().split()))
+inf = 10000000000
+temp = []
 for i in range(n):
-  mi=min(l)
-  ind=l.index(mi)
-  l[ind]=inf
-  temp.append(mi)
-print(*temp,sep=' ')
+    mi = min(lis)
+    ind = lis.index(mi)
+    lis[ind] = inf
+    temp.append(mi)
+print(*temp, sep=" ")

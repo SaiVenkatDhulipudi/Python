@@ -8,9 +8,13 @@ explaination:
 abs(3-1)=2
 abs(3-2)
 """
-l=list(map(int,input().split()))
-x=int(input())
+lis = list(map(int, input().split()))
+x = int(input())
+
+
 def func(i):
-  return abs(x-i)
-l.sort(key=func)
-print(*l,sep=' ')
+    return abs(x - i)
+
+
+lis.sort(key=func)
+print(*lis, sep=" ")

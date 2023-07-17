@@ -8,14 +8,15 @@ output:
 30-1
 """
 from collections import OrderedDict
-n=int(input())
-l=list(map(int,input().split()))
-dic={}
-for i in l:
-  if i not in dic:
-    dic[i]=1
-  else:
-    dic[i]+=1
-dic=OrderedDict(sorted(dic.items()))
+
+n = int(input())
+lis = list(map(int, input().split()))
+dic = {}
+for i in lis:
+    if i not in dic:
+        dic[i] = 1
+    else:
+        dic[i] += 1
+dic = OrderedDict(sorted(dic.items()))
 for key in dic:
-  print('%s-%s'%(key,dic[key]))
+    print("%s-%s" % (key, dic[key]))
